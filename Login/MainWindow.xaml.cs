@@ -4,8 +4,8 @@ namespace Login;
 
 public partial class MainWindow : Window
 {
-    const string USUARIO_PADRAO = "admin";
-    const string SENHA_PADRAO = "admin";
+    private const string USUARIO_PADRAO = "admin";
+    private const string SENHA_PADRAO = "admin";
 
     public MainWindow()
     {

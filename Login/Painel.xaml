@@ -3,9 +3,9 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
-        xmlns:local="clr-namespace:Login"
         mc:Ignorable="d"
-        Title="Painel" Height="450" Width="800">
+        Title="Painel" Height="450" Width="800"
+        Loaded="QuandoJanelaAbrir">
     <Grid Background="#BFDDF3">
         <StackPanel Width="400" HorizontalAlignment="Left" VerticalAlignment="Center">
             <TextBlock Text="Selecione a estudante:" FontSize="16" TextAlignment="Center" />
@@ -26,17 +26,20 @@
                 CornerRadius="5"
                 Background="#89CFF0"
                 Height="35"
-                Width="380">
+                Width="380"
+                Margin="0, 0, 0, 10">
                 <Button
                     Content="Buscar imagem"
                     Background="Transparent"
                     BorderThickness="0"
                     Click="BotaoBuscarImagem" />
             </Border>
+
+            <TextBlock Text="Contagem regressiva: 30s" TextAlignment="Center" x:Name="displayTemporizador" />
         </StackPanel>
 
         <StackPanel Width="400" HorizontalAlignment="Right" VerticalAlignment="Center">
-            <Image x:Name="imagemAluna" Width="380"/>
+            <Image x:Name="imagemAluna" Width="380" />
         </StackPanel>
     </Grid>
 </Window>
