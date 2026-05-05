@@ -1,0 +1,71 @@
+﻿<Window x:Class="Login.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid Background="#BFDDF3">
+        <StackPanel Margin="20" VerticalAlignment="Center" HorizontalAlignment="Center">
+            <TextBlock
+                Text="Login"
+                FontSize="32"
+                TextAlignment="Center" Margin="0, 0, 0, 20" />
+
+            <TextBlock Text="Nome de usuário" />
+            <Border
+                CornerRadius="5"
+                Background="#fff"
+                Margin="0, 5, 0, 10"
+                Height="35"
+                Width="300">
+                <TextBox
+                    FontSize="16"
+                    x:Name="tbUsuario"
+                    BorderThickness="0"
+                    Background="Transparent"
+                    VerticalAlignment="Center" />
+            </Border>
+
+            <TextBlock Text="Senha" />
+            <Border
+                CornerRadius="5"
+                Background="#fff"
+                Margin="0, 5, 0, 20"
+                Height="35"
+                Width="300">
+                <TextBox
+                    FontSize="16"
+                    x:Name="tbSenha"
+                    BorderThickness="0"
+                    Background="Transparent"
+                    VerticalAlignment="Center" />
+            </Border>
+
+            <Border
+                CornerRadius="5"
+                Background="#89CFF0"
+                Height="35"
+                Width="300"
+                Margin="0, 0, 0, 10">
+                <Button
+                    Content="Fazer login"
+                    Click="BotaoLogin"
+                    Background="Transparent"
+                    BorderThickness="0" />
+            </Border>
+
+            <Border
+                CornerRadius="5"
+                Background="#89CFF0"
+                Width="300"
+                Height="35">
+                <Button
+                    Content="Cadastrar-se"
+                    Click="BotaoCadastro"
+                    Background="Transparent"
+                    BorderThickness="0" />
+            </Border>
+        </StackPanel>
+    </Grid>
+</Window>
